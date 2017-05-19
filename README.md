@@ -64,15 +64,15 @@ Webpack 目前有两个主版本，一个是在 master 主干的稳定版，一�
 ### 使用
 首先有一个静态页面 index.html，已经预置好了。
 ```
-    <!-- index.html -->
-    <html>
-    <head>
-      <meta charset="utf-8">
-    </head>
-    <body>
-      <script src="bundle.js"></script>
-    </body>
-    </html> 
+<!-- index.html -->
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script src="bundle.js"></script>
+  </body>
+</html> 
 ```
     
 
