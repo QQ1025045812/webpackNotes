@@ -33,5 +33,42 @@ Webpack 有一个智能解析器，几乎可以处理任何第三方库，无论
 Webpack 还有一个功能丰富的插件系统。大多数内容功能都是基于这个插件系统运行的，还可以开发和使用开源的 Webpack 插件，来满足各式各样的需求。
 #### 快速运行
 Webpack 使用异步 I/O 和多级缓存提高运行效率，这使得 Webpack 能够以令人难以置信的速度快速增量编译。
-
+### 环境了解
+我们在当前的环境中指定的目录是在 /home/hubwiz/web下，才可以进行访问测试。
+可以使用命令pwd查看我们当前指定的目录。
+1. $pwd
+2. /home/hubwiz/web
+pwd命令用于显示当前目录。在环境中这个仓库位于/home/hubwiz/web。
+我们在指定的目录下，预置一个静态页面（index.html）和一张logo图片，以及style.css文件，在后面的课程知识点中编译之后，访问测试，将会看到你编译的效果。
+1. $ ls
+2. index.html logo.png node_modules style.css scripts
+node_modules中是我们预置好的几个模块,可以查看。
+node_modules中是我们预置好的几个模块,可以查看。
+1. <h1>欢迎学习Webpack课程！</h1>
+### 安装
+首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。
+用 npm 安装 Webpack：
+1. $ npm install webpack -g
+此时 Webpack 已经安装到了全局环境下，本课程中我们已装好webpack，可以通过命令行 webpack -h 试试。
+通常我们会将 Webpack 安装到项目的依赖中，这样就可以使用项目本地版本的 Webpack。
+1. #进入项目目录
+2. #确定已经有 package.json，没有就通过 npm init 创建
+3. #安装 webpack 依赖
+4. $npm install webpack --save-dev
+Webpack 目前有两个主版本，一个是在 master 主干的稳定版，一个是在 webpack-2 分支的测试版，测试版拥有一些实验性功能并且和稳定版不兼容，在正式项目中应该使用稳定版。
+1. #查看 webpack 版本信息
+2. $npm info webpack
+3. #安装指定版本的 webpack
+4. $npm install webpack@1.12.x --save-dev
+### 使用
+首先有一个静态页面 index.html，已经预置好了。
+    <!-- index.html -->
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script src="bundle.js"></script>
+</body>
+</html>
 
